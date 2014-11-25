@@ -230,7 +230,7 @@ if($pageview !='portfolio' && $pageview !='timeline' && $pageview !='gallery'){
     }
     ');
 }
-if($pageview =='portfolio' || $pageview =='timeline' || $pageview =='gallery'){
+if($pageview =='portfolio' || $pageview =='timeline' || $pageview =='gallery' || $pageview =='product'){
 
     $this->addStyleDeclaration('
      #tz-component .tz-inner-content, #tz-component{
