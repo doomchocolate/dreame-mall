@@ -726,7 +726,7 @@ class TZ_PortfolioModelProduct extends JModelList
                   .' LEFT JOIN #__tz_portfolio_tags_xref AS x ON x.contentid=c.id'
                   .' LEFT JOIN #__tz_portfolio_tags AS t ON t.id=x.tagsid'
                   .' LEFT JOIN #__users AS u ON c.created_by=u.id'
-                  .' WHERE c.state=-2'
+                  .' WHERE c.state=1 AND c.catid=14'
                   .$where
                   .' GROUP BY c.id';
         $db     = JFactory::getDbo();
@@ -797,7 +797,7 @@ class TZ_PortfolioModelProduct extends JModelList
                   .' LEFT JOIN #__tz_portfolio_tags_xref AS x ON x.contentid=c.id'
                   .' LEFT JOIN #__tz_portfolio_tags AS t ON t.id=x.tagsid'
                   .' LEFT JOIN #__users AS u ON u.id=c.created_by'
-                  .' WHERE c.state=-2'
+                  .' WHERE c.state=1 AND c.catid=14'
                   .$where
                   .' GROUP BY c.id'
                   .' ORDER BY '.$cateOrder.$orderby;
