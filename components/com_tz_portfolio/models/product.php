@@ -88,7 +88,7 @@ class TZ_PortfolioModelProduct extends JModelList
         $tags       = null;
 
         require_once JPATH_COMPONENT.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.'product'.DIRECTORY_SEPARATOR.'view.html.php';
-        $view   = new TZ_PortfolioViewPortfolio();
+        $view   = new TZ_PortfolioViewProduct();
 
         if($this -> getTags())
             $newTags    = $this ->getTags();

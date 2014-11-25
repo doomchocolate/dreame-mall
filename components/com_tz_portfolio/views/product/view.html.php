@@ -24,7 +24,7 @@ jimport('joomla.event.dispatcher');
 require_once(JPATH_COMPONENT_ADMINISTRATOR.DIRECTORY_SEPARATOR.'libraries'.DIRECTORY_SEPARATOR.'HTTPFetcher.php');
 require_once(JPATH_COMPONENT_ADMINISTRATOR.DIRECTORY_SEPARATOR.'libraries'.DIRECTORY_SEPARATOR.'readfile.php');
 
-class TZ_PortfolioViewPortfolio extends JViewLegacy
+class TZ_PortfolioViewProduct extends JViewLegacy
 {
     protected $item = null;
     function display($tpl=null){
