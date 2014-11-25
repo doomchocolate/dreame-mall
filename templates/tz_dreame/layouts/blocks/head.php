@@ -522,6 +522,10 @@ $this->addScript(PLAZART_TEMPLATE_REL.'/js/jquery.backgroundSize.js');
             loadTimeline();
         }
 
+        if (pageView == "product"){
+            loadPortfolio();   
+        }
+
 
         jQuery('div.tz-logo, .header-search .search ').css('height',header_height+'px');
         var scoll_height = win_height - header_height;
