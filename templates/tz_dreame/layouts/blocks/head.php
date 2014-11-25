@@ -220,7 +220,7 @@ if($bgType == "image"){
 }
 
 
-if($pageview !='portfolio' && $pageview !='timeline' && $pageview !='gallery'){
+if($pageview !='portfolio' && $pageview !='timeline' && $pageview !='gallery' && $pageview !='product'){
 
     $this->addStyleDeclaration('
     #tz-component {
@@ -593,6 +593,9 @@ jQuery(window).bind("load resize",function(){
     }
     if(pageView == "timeline"){
         loadTimeline();
+    }
+    if (pageView == "product"){
+        loadPortfolio();   
     }
 
     if(win_Width < 979){
