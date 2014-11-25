@@ -73,7 +73,7 @@ function TZ_PortfolioBuildRoute(&$query)
 		return $segments;
 	}
 
-	if ($view == 'category' || $view == 'article' || $view == 'portfolio' || $view == 'p_article')
+	if ($view == 'category' || $view == 'article' || $view == 'portfolio' || $view == 'p_article' || $view == 'product')
 	{
 		if (!$menuItemGiven) {
 			$segments[] = $view;

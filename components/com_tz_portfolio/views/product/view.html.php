@@ -170,6 +170,11 @@ class TZ_PortfolioViewPortfolio extends JViewLegacy
             $this -> assign('listsCategories',$this -> get('Categories'));
         }
 
+        // jianglin begin
+        $product_list = $this -> get('Product');
+        $this -> assign('listsProduct',$product_list);
+        // jianglin end
+
         $this -> assign('listsArticle',$list);
         $this -> assign('params',$state -> params);
         $this -> assign('mediaParams',$state -> params);
