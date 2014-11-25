@@ -1,0 +1,463 @@
+/**
+ * 
+ * File used to change styling of the standard Joomla! modules
+ *
+ **/
+
+/* mod_search */
+label[for="mod-search-searchword"] {
+	display: none;
+}
+
+#mod-search-searchword {
+	.box-sizing;
+	height: 33px;
+	max-width: 100%!important;
+  line-height: 33px;
+  color:#bdbcbc;
+}
+
+/* mod_stats */
+.stats-module dt,
+.stats-module dd {
+	float: left;	
+}
+
+.stats-module dt {
+	clear: both;
+}
+
+/* mod_breadcrumbs */
+#tz-breadcrumb .icon-home {
+	margin-top: -2px;
+}
+.tz-inner .adv_top{
+  margin:0;
+  text-align: center;
+  img{
+    max-width: 100%;
+  }
+}
+.tz-inner .adv_top p{
+  margin:0
+}
+
+ul.social{
+  padding:0;
+}
+.box .social li{
+  display: inline-block;
+  padding:0;
+  line-height: inherit;
+}
+.social li a{
+  font-size: 0;
+}
+.tz-header .box{
+  margin-bottom: 0;
+}
+.plazart-megamenu ul.nav{
+  padding-left: 0;
+}
+.sidebar-nav{
+  padding: 35px 25px 5px;
+  background: #fff;
+
+  ul{
+    padding-left: 0;
+  }
+  .adv{
+    background:#fcfcfc;
+    text-align: center;
+  }
+  .right_adv{
+    background:#fcfcfc;
+    text-align: center;
+    vertical-align: middle;
+    img{
+      max-width: 100%;
+    }
+  }
+  #mod-search-searchword{
+    border-color:#e1e5e7;
+    background: none !important;
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow:0 0 0 4px #f2f5f5;
+    -moz-box-shadow: 0 0 0 4px #f2f5f5;
+    box-shadow: 0 0 0 4px #f2f5f5;
+    padding-right: 30px;
+    padding-left: 15px;
+  }
+
+  .box h3.header, h3{
+    font-size: 12px;
+    color:#5a5a5a;
+    text-transform: uppercase;
+    padding:0 0 10px 0;
+    margin-bottom:0;
+    text-align: left;
+    font-weight: bold;
+  }
+  h3.TzFilter{
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+  #tz_options{
+    a{
+      display:block;
+      border-bottom:1px solid #ededed;
+      color:#7b7b7b;
+      background:none;
+      border-radius: 0;
+      text-transform: uppercase;
+      padding:10px 0;
+      font-size:14px;
+    }
+    a:first-child{
+      border-top:1px solid #ededed;
+    }
+  }
+  .box {
+    margin-bottom:40px;
+    .custom{
+      p{
+        font-size:12px;
+      }
+    }
+
+    form.letter{
+      position: relative;
+      text-align: center;
+      p{
+        font-size: 11px;
+        color:#777777;
+      }
+    }
+    .mod_tz_news{
+      ul.tz_news{
+        padding:0;
+      }
+    }
+
+    input{
+      max-width: 100%;
+      font-size: 12px;
+    }
+     input.letter{
+      color:#b9b9b9;
+      padding: 4px 0;
+       margin-bottom: 15px;
+       text-align:center;
+       width: 99%;
+       border:1px solid #e0e3e5;
+       box-shadow: none;
+       border-radius:2px ;
+    }
+    input.subcription_btn{
+      text-transform: uppercase;
+      border:none;
+      color:#d2cfca;
+      padding: 7px 0;
+      text-align:center;
+      width: 100%;
+      background:#595959 !important;
+    }
+    .mod_tz_tag li{
+      margin:0 7px 8px 0;
+      overflow: hidden;
+      padding:0;
+      float:left ;
+    }
+    .mod_tz_tag a{
+      padding: 4px 15px 5px;
+      display: inline-block;
+      font-size: 14px;
+      position: relative;
+      color:#fff;
+      text-transform: capitalize;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+    }
+    .mod_tz_tag li:hover a{
+      background: #41b7d8;
+    }
+    .twtr-tweets .twtr-tweet{
+
+      p{
+        font-size: 14px;
+        line-height: 24px !important;
+      }
+    }
+    .twtr-doc .twtr-bd .twtr-tweet{
+      padding: 0;
+      border: none;
+      background: none;
+
+      p em{
+        display: block;
+        background: url(../images/bird.png) left center no-repeat;
+        padding:0 20px;
+        margin-top: 0;
+        font-size: 12px;
+
+
+      }
+    }
+    .twitter-follow-button{
+      margin:10px 0 40px 0;
+      display: block;
+
+    }
+
+    ul.tz_news li{
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #f2f5f5;
+
+    }
+    .mod_tz_featured{
+      .tz_news{
+        p{
+          font-size: 12px;
+          color:#777;
+          margin:5px 0;
+        }
+      }
+    }
+    .tz_news a,
+    h6,
+    .tz_news p{
+      color:#404041;
+      line-height: 22px;
+      font-size: 13px;
+    }
+    .tz_item_default h6{
+      margin:0;
+    }
+    span.tz_date{
+      font-size: 12px;
+      color:#777;
+      font-style: normal;
+      padding-top: 3px;
+      text-transform: uppercase;
+    }
+
+    .fb_iframe_widget{
+      width: 100% !important;
+      overflow: hidden;
+    }
+  }
+  li a{
+    background: none;
+    border-bottom: 1px solid #EDEDED;
+    border-radius: 0 0 0 0;
+    color: #7B7B7B;
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  li a:hover,
+  li.active a{
+    background: none;
+    box-shadow: none;
+    color: #FF7200;
+  }
+
+}
+
+
+.header-search .search{
+  border-left:1px solid #e2e6e7;
+  label.icon-search{
+    position: absolute;
+    right:20px;
+    top:20px;
+  }
+  #mod-search-searchword{
+    border:none;
+    width:80%;
+    margin:10px 0 0 20px;
+    box-shadow: none;
+    background: none !important;
+  }
+}
+
+.right-sidebar-inner .sidebar-nav-inner{
+  padding:20px 20px 20px 0;
+}
+#tz-footer{
+  ul.nav{
+    display: block;
+    padding:0 0 0 30px;
+    width:100%;
+    text-align: left;
+
+    li{
+      display: inline-block;
+      padding:3px 13px 3px 12px;
+    }
+    li.active{
+      a.dropdown-toggle{
+        background: none;
+        b{
+          display: none;
+        }
+      }
+    }
+
+  }
+  .tz-footernav{
+    text-align:right;
+  }
+}
+div.flexslider{
+  border:none;
+  box-shadow: none;
+  border-radius: 0;
+  margin:0;
+  .flex-viewport{
+    ul.slides{
+      li{
+
+      }
+    }
+
+  }
+  .tz_image{
+    float:left;
+  }
+  .info_slide{
+    padding:0;
+
+  }
+}
+#tz-content-top{
+  .mod_tz_news{
+    ul.tz_news{
+      padding:0;
+    }
+  }
+}
+.header-social{
+
+  .box{
+    margin-bottom: 0;
+  }
+div.tz_social{
+  ul.social{
+    padding-top: 10px;
+    text-align: right;
+    a{
+      margin-left: 5px;
+      margin-right:0;
+      transition: background 1s;
+      -webkit-transition: background 1s;
+      -moz-transition: background 1s;
+      -o-transition: background 1s;
+    }
+    li.text-message{
+      line-height: 25px;
+      padding-right: 10px;
+    }
+    li{
+      line-height: 37px;
+    }
+  }
+
+}
+}
+#tz-breadcrumb .breadcrumb {
+  border:none;
+  padding:0;
+  li{
+    background:url(../images/bg-menu.png) left center no-repeat;
+    color:#404041;
+    padding:0 5px 0 25px;
+    text-transform: uppercase;
+    margin-right:10px;
+    line-height: 30px;
+    a{
+      color:#404041;
+      text-transform: uppercase;
+    }
+  }
+  li:first-child{
+    padding-left: 0;
+    background: none;
+    a{
+
+    }
+  }
+}
+.tz-breadcrumb-right{
+  .box{
+    margin-bottom:0;
+  }
+  .tz_social{
+    text-align: right;
+    .social{
+      float:none;
+
+      li{
+        line-height:32px;
+      }
+      li.text-message{
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+#plazart-mainnav .nav-child {
+  .mod_tz_news{
+    .tz_news{
+      padding-left:0;
+      li{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        text-align: left;
+        margin:0;
+        border-top: 1px solid #f2f5f5;
+        span{
+          a{
+            padding-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+#sidebar-left{
+margin-top:3px;
+}
+._copyright{
+  text-align: right;
+  p{
+    text-transform: uppercase;
+    margin:0;
+  }
+}
+div#tztwd-container{
+  border:none;
+  background: transparent;
+  border-radius: 0;
+  padding-top:10px;
+  .tztwd-tweet-container:first-child{
+    border-top:1px solid #ededed;
+  }
+
+  .tztwd-tweet-container{
+    border-bottom:1px solid #ededed;
+    padding:10px 0;
+    a{
+
+    }
+    .tztwd-tweet-data a{
+      font-size:10px;
+
+    }
+  }
+}

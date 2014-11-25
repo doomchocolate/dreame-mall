@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN"
+        "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site" method="upgrade">
+    <name>tz_dreame</name>
+    <version>1.1</version>
+    <creationDate>02/28/2013</creationDate>
+    <author>TemPlaza</author>
+    <authorEmail>info@templaza.com</authorEmail>
+    <copyright>Copyright (C) 2012 TemPlaza. All rights reserved.</copyright>
+    <description><![CDATA[This is Plazart Framework]]></description>
+    <group>plazart</group>
+    <files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>favicon.ico</filename>
+        <filename>index.php</filename>
+        <filename>offline.php</filename>
+        <filename>templateDetails.xml</filename>
+		<filename>templateInfo.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>admin</folder>
+        <folder>config</folder>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>fonts</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <folder>layouts</folder>
+        <folder>less</folder>
+        <folder>libraries</folder>
+    </files>
+    <positions>
+        <position>debug</position>
+        <position>menu</position>
+        <position>social</position>
+        <position>search</position>
+        <position>header</position>
+        <position>top</position>
+        <position>breadcrumb</position>
+        <position>sidebar</position>
+        <position>right</position>
+        <position>right1</position>
+        <position>left</position>
+        <position>left1</position>
+        <position>mainbody</position>
+        <position>mainbody_top</position>
+        <position>mainbody_bottom</position>
+        <position>mass-top</position>
+        <position>mass-bottom</position>
+        <position>bottom</position>
+        <position>bottom1</position>
+        <position>bottom2</position>
+        <position>bottom3</position>
+        <position>bottom4</position>
+        <position>bottom5</position>
+        <position>bottom6</position>
+        <position>footer</position>
+        <position>headline</position>
+        <position>user1</position>
+        <position>user2</position>
+        <position>user3</position>
+        <position>user4</position>
+        <position>user5</position>
+        <position>user6</position>
+        <position>top2</position>
+        <position>top3</position>
+        <position>content-top</position>
+        <position>content-bottom</position>
+        <position>footernav</position>
+        <position>contact</position>
+        <position>menu-right</position>
+        <position>breadcrumb-right</position>
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_tz_dreame.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_tz_dreame.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="theme_params" label="TZ_THEME_LABEL" description="TZ_THEME_DESC"
+                      addfieldpath="/templates/tz_dreame/admin/elements">
+
+                <field name="logo_type" type="list" default="image" label="TPL_TZ_LANG_LOGO_TYPE"
+                       description="TPL_TZ_LANG_LOGO_TYPE_DESC">
+                    <option value="image">TPL_TZ_LANG_LOGO_TYPE_IMAGE</option>
+                    <option value="text">TPL_TZ_LANG_LOGO_TYPE_TEXT</option>
+                    <option value="css">TPL_TZ_LANG_LOGO_TYPE_CSS</option>
+                    <option value="none">TPL_TZ_LANG_LOGO_TYPE_NONE</option>
+                </field>
+
+                <field name="logo_image" type="media" default="" label="TPL_TZ_LANG_LOGO_IMAGE"
+                       description="TPL_TZ_LANG_LOGO_IMAGE_DESC"/>
+
+                <field name="logo_text" type="text" default="" label="TPL_TZ_LANG_LOGO_TEXT"
+                       description="TPL_TZ_LANG_LOGO_TEXT_DESC"/>
+
+                <field name="logo_slogan" type="text" default="" label="TPL_TZ_LANG_LOGO_SLOGAN"
+                       description="TPL_TZ_LANG_LOGO_SLOGAN_DESC"/>
+
+                <field name="favicon_image" type="media" default="" label="TPL_TZ_LANG_FAVICON_IMAGE"
+                       description="TPL_TZ_LANG_FAVICON_IMAGE_DESC"/>
+
+                <field name="tz_width_sidebar" type="text" default="230" label="TPL_TZ_WIDTH_SIDEBAR"
+                       description="TPL_TZ_WIDTH_SIDEBAR_DESC"/>
+
+                <field name="webmaster_contact_type" type="list" default="1" label="TPL_TZ_LANG_WEBMASTER_CONTACT_TYPE"
+                       description="TPL_TZ_LANG_WEBMASTER_CONTACT_TYPE_DESC">
+                    <option value="email">TPL_TZ_LANG_WEBMASTER_CONTACT_TYPE_EMAIL</option>
+                    <option value="url">TPL_TZ_LANG_WEBMASTER_CONTACT_TYPE_URL</option>
+                    <option value="none">TPL_TZ_LANG_WEBMASTER_CONTACT_TYPE_NONE</option>
+                </field>
+                <field name="webmaster_contact" type="text" default="webmaster@templaza.com"
+                       label="TPL_TZ_LANG_WEBMASTER_CONTACT" description="TPL_TZ_LANG_WEBMASTER_CONTACT_DESC"/>
+                <field name="google_analytics" type="text" label="TPL_TZ_LANG_GOOGLE_ANALYTICS"
+                       description="TPL_TZ_LANG_GOOGLE_ANALYTICS_DESC"/>
+
+                <field name="au_twitter_color" type="tzcolor" label="Author Twitter Color" default="8bc9e6"
+                       description="Color "/>
+                <field name="au_face_color" type="tzcolor" label="Author Face Color" default="7f91bc"
+                       description="Color "/>
+                <field name="au_google_color" type="tzcolor" label="Author Google+ Color" default="ec7b71"
+                       description="Color "/>
+
+                <field name="blog_maxwidth" type="text" label="Blog Max Width" default="990"
+                       description="Max Width Blog and default page"/>
+
+                <field name="portfolio_height" type="text" label="Portfolio Item Height" default="450"
+                       description="Height of Item Portfolio (450)"/>
+
+            </fieldset>
+
+            <fieldset name="color_theme_params" label="Color Theme" description="You can change color title, menu, text. Change background website or background menu..."
+                      addfieldpath="/templates/tz_dreame/admin/elements">
+                <field name="border_color" type="tzcolor" label="Border Color" default="e2e6e7"
+                       description="Border Color (e2e6e7)"/>
+
+                <field name="border_color" type="tzcolor" label="Border Color" default="e2e6e7"
+                       description="Border Color (e2e6e7)"/>
+
+                <field name="border_color_date" type="tzcolor" label="Border Date Color" default="CCCCCC"
+                       description="Border Date Color (CCCCCC)"/>
+
+                <field name="title_color" type="tzcolor" label="Title Color" default="000000"
+                       description="Title Color (000000)"/>
+
+                <field name="text_color" type="tzcolor" label="Text Color" default="4f4f4f"
+                       description="Text Color (4f4f4f)"/>
+
+                <field name="color_hover" type="tzcolor" label="Color Hover" default="FF7200"
+                       description="Color Hover (FF7200)"/>
+
+                <field name="heading_sidebar_color" type="tzcolor" label="Heading Sidebar Color" default="5A5A5A"
+                       description="Heading Sidebar Color (5A5A5A)"/>
+
+                <field name="menu_color" type="tzcolor" label="Menu Color" default="7B7B7B"
+                       description="Menu Color (7B7B7B)"/>
+
+                <field name="background_gradient" type="media" label="Background Gradient" default="images/bg-transparent.png"
+                       description="Background image gradient portfolio item"/>
+
+                <field name="background_input" type="tzcolor" label="Background input" default="ffffff"
+                       description="Background input box"/>
+
+                <field name="border_input" type="tzcolor" label="Border input" default="ffffff"
+                       description="Border Color input box"/>
+
+                <field name="background_sidebar" type="tzcolor" label="Background Sidebar" default="ffffff"
+                       description="Background Sidebar (ffffff)"/>
+
+                <field name="content_color" type="tzcolor" label="Content Color" default="3f3f3f"
+                       description="Content Color (3f3f3f)"/>
+
+                <field name="content_color" type="tzcolor" label="Background Content" default="ffffff"
+                       description="Background Content (ffffff)"/>
+
+                <field name="background_menu" type="tzcolor" label="Background Submenu" default="fff"
+                       description="Background Submenu (ffffff)"/>
+
+                <field name="background_type" type="list" default="color" label="Background Type"
+                       description="background">
+                    <option value="color">Color</option>
+                    <option value="pattern">Pattern</option>
+                    <option value="image">Image</option>
+                </field>
+
+                <field name="background_color" type="tzcolor" default="color" label="Background Color"
+                       description="background"/>
+                <field name="background_pattern" type="media" label="Background Pattern(image)" default=""
+                       description="Choose Pattern or image"/>
+
+                <field name="background_menu_mobile" type="media" label="Background Menu Mobile" default="images/menu-item-mobile.png"
+                       description="Choose Pattern or image"/>
+
+                <field name="background_menu_mobile_dropdown" type="media" label="Background Dropdown" default="images/btn_dropdown.png"
+                       description="Choose image"/>
+
+                <field name="background_submenu_mobile_dropdown" type="media" label="Background Sub menu Mobile" default="images/btn_dropdown.png"
+                       description="Choose image"/>
+
+                <field name="color_menu_mobile" type="tzcolor" label="Color Menu Mobile" default="bbbbbb"
+                       description="Choose color for menu item on mobile layout"/>
+
+                <field name="border_color_menu_mobile" type="tzcolor" label="Border Color Menu Mobile" default="e2e6e7"
+                       description="Choose border color for menu item on mobile layout"/>
+                <field name="background_quote" type="media" label="Background Quote" default="images/quote_item.png"
+                       description="Choose image"/>
+                <field name="background_link" type="media" label="Background Link" default="images/link_item.png"
+                       description="Choose image"/>
+
+            </fieldset>
+            <fieldset name="layout_params">
+                <field name="max_page_width" type="text" default="" label="TPL_TZ_LANG_MAX_PAGE_WIDTH"
+                       description="TPL_TZ_LANG_MAX_PAGE_WIDTH_DESC"/>
+
+                <field name="max_page_width_value" type="list" default="px" label="TPL_TZ_LANG_MAX_PAGE_WIDTH_UNIT"
+                       description="TPL_TZ_LANG_MAX_PAGE_WIDTH_UNIT_DESC">
+                    <option value="px">TPL_TZ_LANG_PIXEL</option>
+                    <option value="%">TPL_TZ_LANG_PERCENT</option>
+                </field>
+
+
+                <field name="left_sidebar_width" type="list" default="span3" label="TPL_TZ_LANG_SIDEBAR_WIDTH_LEFT"
+                       description="TPL_TZ_LANG_SIDEBAR_WIDTH_DESC">
+                    <option value="1">TPL_TZ_LANG_SPAN1</option>
+                    <option value="2">TPL_TZ_LANG_SPAN2</option>
+                    <option value="3">TPL_TZ_LANG_SPAN3</option>
+                    <option value="4">TPL_TZ_LANG_SPAN4</option>
+                    <option value="5">TPL_TZ_LANG_SPAN5</option>
+                    <option value="6">TPL_TZ_LANG_SPAN6</option>
+                    <option value="7">TPL_TZ_LANG_SPAN7</option>
+                    <option value="8">TPL_TZ_LANG_SPAN8</option>
+                    <option value="9">TPL_TZ_LANG_SPAN9</option>
+                    <option value="10">TPL_TZ_LANG_SPAN10</option>
+                </field>
+
+
+            </fieldset>
+
+            <!-- Font settings -->
+            <fieldset name="font_params" addfieldpath="/templates/tz_dreame/admin/elements">
+                <field name="font_link1" type="url" label="TPL_TZ_LANG_GOOGLE_FONTS_URL"
+                       description="TPL_TZ_LANG_GOOGLE_FONTS_URL_DESC" url="http://code.google.com/webfonts"
+                       text="TPL_TZ_LANG_CLICK_HERE"/>
+                <field name="font_link2" type="url" label="TPL_TZ_LANG_SQUIRREL_FONTS_URL"
+                       description="TPL_TZ_LANG_SQUIRREL_FONTS_URL_DESC" url="http://www.fontsquirrel.com/fontface"
+                       text="TPL_TZ_LANG_CLICK_HERE"/>
+                <field name="font_link3" type="url" label="TPL_TZ_LANG_EDGE_FONTS_URL"
+                       description="TPL_TZ_LANG_EDGE_FONTS_URL_DESC" url="http://html.adobe.com/edge/webfonts/"
+                       text="TPL_TZ_LANG_CLICK_HERE"/>
+                <field name="font_name_group1" type="tzfont" directory="templates/tz_dreame/fonts/"
+                       label="TPL_TZ_LANG_FONT_NAME_G1" description="TPL_TZ_LANG_FONT_NAME_G1_DESC"/>
+                <field name="font_rules_group1" type="textarea" rows="6" cols="40" label="TPL_TZ_LANG_FONT_RULES_G1"
+                       description="TPL_TZ_LANG_FONT_RULES_G1_DESC"/>
+                <field name="font_name_group2" type="tzfont" directory="templates/tz_dreame/fonts/"
+                       label="TPL_TZ_LANG_FONT_NAME_G2" description="TPL_TZ_LANG_FONT_NAME_G2_DESC"/>
+                <field name="font_rules_group2" type="textarea" rows="6" cols="40" label="TPL_TZ_LANG_FONT_RULES_G2"
+                       description="TPL_TZ_LANG_FONT_RULES_G2_DESC"/>
+                <field name="font_name_group3" type="tzfont" directory="templates/tz_dreame/fonts/"
+                       label="TPL_TZ_LANG_FONT_NAME_G3" description="TPL_TZ_LANG_FONT_NAME_G3_DESC"/>
+                <field name="font_rules_group3" type="textarea" rows="6" cols="40" label="TPL_TZ_LANG_FONT_RULES_G3"
+                       description="TPL_TZ_LANG_FONT_RULES_G3_DESC"/>
+                <field name="font_name_group4" type="tzfont" directory="templates/tz_dreame/fonts/"
+                       label="TPL_TZ_LANG_FONT_NAME_G4" description="TPL_TZ_LANG_FONT_NAME_G4_DESC"/>
+                <field name="font_rules_group4" type="textarea" rows="6" cols="40" label="TPL_TZ_LANG_FONT_RULES_G4"
+                       description="TPL_TZ_LANG_FONT_RULES_G4_DESC"/>
+                <field name="font_name_group5" type="tzfont" directory="templates/tz_dreame/fonts/"
+                       label="TPL_TZ_LANG_FONT_NAME_G5" description="TPL_TZ_LANG_FONT_NAME_G5_DESC"/>
+                <field name="font_rules_group5" type="textarea" rows="6" cols="40" label="TPL_TZ_LANG_FONT_RULES_G5"
+                       description="TPL_TZ_LANG_FONT_RULES_G5_DESC"/>
+                <field name="font_name_group6" type="tzfont" directory="templates/tz_dreame/fonts/"
+                       label="TPL_TZ_LANG_FONT_NAME_G6" description="TPL_TZ_LANG_FONT_NAME_G6_DESC"/>
+                <field name="font_rules_group6" type="textarea" rows="6" cols="40" label="TPL_TZ_LANG_FONT_RULES_G6"
+                       description="TPL_TZ_LANG_FONT_RULES_G6_DESC"/>
+                <field name="font_name_group7" type="tzfont" directory="templates/tz_dreame/fonts/"
+                       label="TPL_TZ_LANG_FONT_NAME_G7" description="TPL_TZ_LANG_FONT_NAME_G7_DESC"/>
+                <field name="font_rules_group7" type="textarea" rows="6" cols="40" label="TPL_TZ_LANG_FONT_RULES_G7"
+                       description="TPL_TZ_LANG_FONT_RULES_G7_DESC"/>
+
+            </fieldset>
+
+            <fieldset name="socialapi_params" label="Social API">
+
+                <field name="fb_lang" type="text" default="en_US" label="TPL_TZ_LANG_FB_LANG"
+                       description="TPL_TZ_LANG_FB_LANG_DESC"/>
+
+            </fieldset>
+
+            <!-- Dev settings -->
+            <fieldset name="dev_params" addfieldpath="/templates/tz_fest/admin/elements">
+                <field
+                        name="css_override"
+                        type="radio"
+                        class="btn-group"
+                        label="TPL_TZ_LANG_CSS_OVERRIDE"
+                        default="0"
+                        description="TPL_TZ_LANG_CSS_OVERRIDE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="css_prefixer"
+                        type="radio"
+                        class="btn-group"
+                        label="TPL_TZ_LANG_CSS_PREFIXER"
+                        default="0"
+                        description="TPL_TZ_LANG_CSS_PREFIXER_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="css_custom" type="textarea" rows="6" cols="40" label="TPL_TZ_LANG_CSS_CUSTOM"
+                       description="TPL_TZ_LANG_CSS_CUSTOM_DESC"/>
+                <field
+                        name="chrome_frame_support"
+                        type="radio"
+                        class="btn-group"
+                        label="TPL_TZ_LANG_CHROME_FRAME_SUPPORT"
+                        default="0"
+                        description="TPL_TZ_LANG_CHROME_FRAME_SUPPORT_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,57 @@
+
+*{
+    text-align: right ;
+}
+.header-adv,
+nav#plazart-mainnav .header-social,
+.tz-breadcrumb-right,
+.tz-breadcrumb-right .tz_social .social li,
+#tz-footer .tz-footernav
+{
+    float:left !important;
+    margin-left: 0 !important;
+}
+.tz-logo,
+#plazart-mainnav .tz-inner > .navbar,
+#tz-breadcrumb,
+#tz-breadcrumb .breadcrumb li,
+.footer,
+#tz-footer ul.nav li,
+ul.tz_news li img
+{
+    float:right !important;
+}
+.header-social div.tz_social ul.social,
+.tz-breadcrumb-right .tz_social
+{
+    text-align: left !important;
+}
+.navbar .nav > li{
+    float:right !important;
+}
+#plazart-mainnav .navbar .navbar-inner ul.nav li a,
+#tz-breadcrumb .breadcrumb li{
+    background-position: right center !important;
+    padding-left: 12px !important;
+    padding-right: 26px !important;
+}
+#tz-footer ul.nav{
+    padding-left: 0;
+}
+ul.tz_news li img{
+    margin-left:10px ;
+}
+a#toTop{
+    right: auto !important;
+    left:20px !important;
+}
+div input,
+div textarea{
+    direction: rtl !important;
+}
+.btn-base,
+.btn, .btn-primary,
+div .small-btn-base,
+.btn-icon{
+    text-align: center !important;
+}
