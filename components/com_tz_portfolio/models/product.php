@@ -145,17 +145,17 @@ class TZ_PortfolioModelProduct extends JModelList
         $this -> setState('char',$char);
 
         require_once JPATH_COMPONENT.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.'product'.DIRECTORY_SEPARATOR.'view.html.php';
-        $view   = new TZ_PortfolioViewPortfolio();
+        $view   = new TZ_PortfolioViewProduct();
 
         JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 
-        $list   = $this -> getArticle();
+        // $list   = $this -> getArticle();
 
         // jianglin begin
         $productList = $this -> getProduct();
         // jianglin end
 
-        $view -> assign('listsArticle',$list);
+        // $view -> assign('listsArticle',$list);
         $view -> assignRef('params',$params);
         $view -> assignRef('mediaParams',$params);
         $view -> assign('Itemid',$Itemid);
