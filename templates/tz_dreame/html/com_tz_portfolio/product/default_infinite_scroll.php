@@ -28,7 +28,7 @@ $params = $this -> params;
 
 
 <div id="loadaj" style="display: none;">
-    <a href="<?php echo JURI::root().'index.php?option=com_tz_portfolio&view=product&task=portfolio.ajax'
+    <a href="<?php echo JURI::root().'index.php?option=com_tz_portfolio&view=product&task=product.ajax'
                         .'&layout=item'.(($this -> char)?'&char='.$this -> char:'').'&Itemid='.$this -> Itemid.'&page=2'; ?>">
     </a>
 </div>

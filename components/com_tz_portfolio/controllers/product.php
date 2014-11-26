@@ -26,15 +26,15 @@ class TZ_PortfolioControllerProduct extends JControllerLegacy
 {
     function display($cachable = false, $urlparams = array()){
         switch ($this -> getTask()){
-            case 'portfolio.ajax':
+            case 'product.ajax':
             case 'ajax':
                 $this -> ajax();
                 break;
-            case 'portfolio.ajaxcategories':
+            case 'product.ajaxcategories':
             case 'ajaxcategories':
                 $this -> ajaxcategories();
                 break;
-            case 'portfolio.ajaxtags':
+            case 'product.ajaxtags':
             case 'ajaxtags':
                 $this -> ajaxtags();
                 break;
