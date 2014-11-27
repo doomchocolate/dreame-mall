@@ -61,7 +61,8 @@ class UsersControllerUser extends UsersController
 		{
 			// Success
 			$app->setUserState('users.login.form.data', array());
-			$app->redirect(JRoute::_($app->getUserState('users.login.form.return'), false));
+			// $app->redirect(JRoute::_($app->getUserState('users.login.form.return'), false));
+			$app->redirect(JRoute::_('index.php', false));
 		}
 		else
 		{
