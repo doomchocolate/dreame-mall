@@ -23,7 +23,7 @@
 /administrator/components/com_redirect/*
 /administrator/components/com_search/*
 /administrator/components/com_templates/*
-/administrator/components/com_users/*
+# /administrator/components/com_users/*
 /administrator/components/com_weblinks/*
 /administrator/components/index.html
 /administrator/help/*
@@ -234,7 +234,7 @@
 /components/com_media/*
 /components/com_newsfeeds/*
 /components/com_search/*
-/components/com_users/*
+# /components/com_users/*
 /components/com_weblinks/*
 /components/com_wrapper/*
 /components/index.html
