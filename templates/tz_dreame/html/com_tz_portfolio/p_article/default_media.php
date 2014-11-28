@@ -84,6 +84,7 @@ endif;
 <?php if($media):?>
     <?php if(!empty($media[0] -> images) OR !empty($media[0] -> thumb)):?>
         <div class="TzArticleMedia">
+        <!--
         <?php if($params -> get('show_image',1) == 1):?>
             <?php if($media[0] -> type == 'image'):?>
                 <div class="tz_portfolio_image" style="position: relative;">
@@ -107,6 +108,7 @@ endif;
                 </div>
             <?php endif;?>
         <?php endif;?>
+        -->
 
         <?php if($params -> get('show_image_gallery',1) == 1):?>
             <?php
