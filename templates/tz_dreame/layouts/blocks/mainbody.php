@@ -106,7 +106,7 @@ $pageview = JRequest::getVar('view');
                 <aside id="sidebar-left" class="tz-border-top tz-border-right span<?php echo $this->getParam('left_sidebar_width', 3); ?> left-sidebar pull-left offset-<?php echo $offset;?> ">
 
                     <div class="sidebar-nav sidebar-level1">
-                        <?php if($pageview == 'portfolio' || $pageview == 'timeline' || $pageview == 'product'){ ?>
+                        <?php if($pageview == 'timeline' || $pageview == 'product'){ ?>
                             <div id="tz_options"></div>
                         <?php } ?>
 
