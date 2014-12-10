@@ -35,12 +35,61 @@ class plgContentTZ_Portfolio_Comment extends JPlugin
 				return $this -> TZPortfolioJComment($context,$article,$params,$page);
 			}
 			elseif($params -> get('tz_comment_type') == 'facebook'){
-				return $this -> TZPortfolioFacebookComment($context,$article,$params,$page);
+				// return $this -> TZPortfolioFacebookComment($context,$article,$params,$page);
+                                return $this -> TZPortfolioDuoshuoChangYan($context,$article,$params,$page);
 			}
 			elseif($params -> get('tz_comment_type') == 'disqus'){
 				return $this -> TZPortfolioDisQusComment($context,$article,$params,$page);
 			}
 		}
+    }
+
+    function TZPortfolioDuoshuoChangYan($context, &$article, &$params, $page = 0){
+        $html  = '<div class="tz_portfolio_comment">';
+
+        $html .= '<!--高速版，加载速度快，使用前需测试页面的兼容性-->';
+        $html .= '<div id="SOHUCS" sid="'.$article->id.'"></div>';
+        $html .= '<script>';
+        $html .= '  (function(){';
+        $html .= '    var appid = \'cyrw9BEEw\',';
+        $html .= '    conf = \'prod_507929d0ac2f5866a46762b10404f75b\';';
+        $html .= '    var doc = document,';
+        $html .= '    s = doc.createElement(\'script\'),';
+        $html .= '    h = doc.getElementsByTagName(\'head\')[0] || doc.head || doc.documentElement;';
+        $html .= '    s.type = \'text/javascript\';';
+        $html .= '    s.charset = \'utf-8\';';
+        $html .= '    s.src =  \'http://assets.changyan.sohu.com/upload/changyan.js?conf=\'+ conf +\'&appid=\' + appid;';
+        $html .= '    h.insertBefore(s,h.firstChild);';
+        $html .= '    window.SCS_NO_IFRAME = true;';
+        $html .= '  })()';
+        $html .= '</script>';
+
+        $html   .='</div>';
+        return $html;
+    }
+
+    function TZPortfolioDuoshuo($context, &$article, &$params, $page = 0){
+        $html  = null;
+        $html  = '<div class="tz_portfolio_comment">';
+        $html .= '<!-- 多说评论框 start -->';
+        $html .= '<div class="ds-thread" data-thread-key="'.$article->id.'" data-title="'.$article->title.'"></div>';
+        $html .= '<!-- 多说评论框 end -->';
+        $html .= '<!-- 多说公共JS代码 start (一个网页只需插入一次) -->';
+        $html .= '<script type="text/javascript">';
+        $html .= 'var duoshuoQuery = {short_name:"iam007"};';
+        $html .= '    (function() {';
+        $html .= '        var ds = document.createElement(\'script\');';
+        $html .= '        ds.type = \'text/javascript\';ds.async = true;';
+        $html .= '        ds.src = (document.location.protocol == \'https:\' ? \'https:\' : \'http:\')' + '//static.duoshuo.com/embed.js';;
+        $html .= '        ds.charset = \'UTF-8\';';
+        $html .= '        (document.getElementsByTagName(\'head\')[0] ';
+        $html .= '         || document.getElementsByTagName(\'body\')[0]).appendChild(ds);';
+        $html .= '    })();';
+        $html .= '</script>';
+        $html .= '<!-- 多说公共JS代码 end -->';
+        $html   .='</div>';
+
+        return $html;
     }
 
     /*JComment*/
