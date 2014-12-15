@@ -112,8 +112,7 @@ else{
     <?php if ($params->get('show_hits')) : ?>
         <span class="TzLine"><?php echo JText::_('BLOG_SPACE_TPL');?></span>
         <span class="TzBlogHits">
-                    <span class="numbers"><?php echo  $this->item->hits; ?></span>
-                    <span class="hits"><?php echo JText::_('ARTICLE_HITS'); ?></span>
+<?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
                 </span>
     <?php endif; ?>
 
