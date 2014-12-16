@@ -57,7 +57,7 @@ $view = JRequest::getCmd('view', '');
 
 
 <!-- Pinterest script --> 
-<?php if($this->API->get('pinterest_btn', '1') == 1 && $option == 'com_tz_portfolio' && $view == 'article') : ?><plazart:social>
+<?php if($this->API->get('pinterest_btn', '0') == 1 && $option == 'com_tz_portfolio' && $view == 'article') : ?><plazart:social>
 <?php if($this->API->get('cookie_consent', '0') == 0) : ?>
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 <?php else : ?>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>mod_tz_social</name>
+	<author>Templaza</author>
+	<creationDate>October 17th 2012</creationDate>
+	<copyright>Copyright (C) 2012 TemPlaza. All rights reserved.</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>support@templaza.com</authorEmail>
+	<authorUrl>www.templaza.com/</authorUrl>
+	<version>1.0</version>
+	<description>MOD_CATEGORIES_XML_DESCRIPTION
+     <![CDATA[
+    <link rel="stylesheet" type="text/css" href="../modules/mod_tz_social/admin/stylemodule/tz-style-module.css" />
+    ]]>
+    </description>
+
+    <files>
+		<filename module="mod_tz_social">mod_tz_social.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>admin</folder>
+		<filename>index.html</filename>
+		<filename>mod_tz_social.xml</filename>
+	</files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_tz_social.ini</language>
+        <language tag="en-GB">en-GB.mod_tz_social.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="base">
+                <field name="so-text-message" type="text" label="Social Text" description="" />
+                <field name="social-type" label="Social Type" default="icon" type="list">
+                    <option value="icon">icon</option>
+                    <option value="font">Font</option>
+                </field>
+                <field name="font-size" type="text" label="Font Size" Description="Font Size" default="30"/>
+            </fieldset>
+            <fieldset name="twitter">
+                <field name="tw-name" type="text" label="NAME_TWITTER" />
+                <field name="tw-url" type="text" label="URL_TWITTER" />
+                <field name="tw-image" type="media" label="IMAGE-TWITTER" description=""/>
+                <field name="tw-image-hover" type="media" label="IMAGE-HOVER-TWITTER" description=""/>
+
+            </fieldset>
+          <fieldset name="facebook">
+              <field name="f-name" type="text" label="NAME_FACEBOOK" />
+              <field name="f-url" type="text" label="URL_FACEBOOK" />
+              <field name="f-image" type="media" label="IMAGE-FACEBOOK" description=""/>
+              <field name="f-image-hover" type="media" label="IMAGE-HOVER-FACEBOOK" description=""/>
+
+          </fieldset>
+          <fieldset name="foursquare">
+              <field name="fours-name" type="text" label="NAME_FOURSQUARE" />
+              <field name="fours-url" type="text" label="URL_FOURSQUARE" />
+              <field name="fours-image" type="media" label="IMAGE-FOURSQUARE" description=""/>
+              <field name="fours-image-hover" type="media" label="IMAGE-HOVER-FOURSQUARE" description=""/>
+
+          </fieldset>
+          <fieldset name="deviantart">
+              <field name="dev-name" type="text" label="NAME_DEVIANTART" />
+              <field name="dev-url" type="text" label="URL_DEVIANTART" />
+              <field name="dev-image" type="media" label="IMAGE-DEVIANTART" description=""/>
+              <field name="dev-image-hover" type="media" label="IMAGE-HOVER-DEVIANTART" description=""/>
+
+          </fieldset>
+          <fieldset name="youtube">
+              <field name="you-name" type="text" label="NAME_YOUTUBE" />
+              <field name="you-url" type="text" label="URL_YOUTUBE" />
+              <field name="you-image" type="media" label="IMAGE-YOUTUBE" description=""/>
+              <field name="you-image-hover" type="media" label="IMAGE-HOVER-YOUTUBE" description=""/>
+
+          </fieldset>
+          <fieldset name="vimeo">
+              <field name="vimeo-name" type="text" label="NAME_VIMEO" />
+              <field name="vimeo-url" type="text" label="URL_VIMEO" />
+              <field name="vimeo-image" type="media" label="IMAGE-VIMEO" description=""/>
+              <field name="vimeo-image-hover" type="media" label="IMAGE-HOVER-VIMEO" description=""/>
+
+          </fieldset>
+
+          <fieldset name="GOOGLE">
+              <field name="g-name" type="text" label="NAME_GOOGLE" />
+              <field name="g-url" type="text" label="URL_GOOGLE" />
+              <field name="g-image" type="media" label="IMAGE-GOOGLE" description=""/>
+              <field name="g-image-hover" type="media" label="IMAGE-HOVER-GOOGLE" description=""/>
+
+          </fieldset>
+          <fieldset name="delicious">
+              <field name="de-name" type="text" label="NAME_DELICIOUS" />
+              <field name="de-url" type="text" label="URL_DELICIOUS" />
+              <field name="de-image" type="media" label="IMAGE-DELICIOUS" description=""/>
+              <field name="de-image-hover" type="media" label="IMAGE-HOVER-DELICIOUS" description=""/>
+
+          </fieldset>
+            <fieldset name="dribble">
+              <field name="di-name" type="text" label="NAME_DRIBBLE" />
+              <field name="di-url" type="text" label="URL_DRIBBLE" />
+              <field name="di-image" type="media" label="IMAGE-DRIBBLE" description=""/>
+              <field name="di-image-hover" type="media" label="IMAGE-HOVER-DRIBBLE" description=""/>
+
+          </fieldset>
+          <fieldset name="skype">
+              <field name="sk-name" type="text" label="NAME_SKYPE" />
+              <field name="sk-url" type="text" label="URL_SKYPE" />
+              <field name="sk-image" type="media" label="IMAGE-SKYPE" description=""/>
+              <field name="sk-image-hover" type="media" label="IMAGE-HOVER-SKYPE" description=""/>
+
+          </fieldset>
+          <fieldset name="rss">
+              <field name="rs-name" type="text" label="NAME_RSS" />
+              <field name="rs-url" type="text" label="URL_RSS" />
+              <field name="rs-image" type="media" label="IMAGE-RSS" description=""/>
+              <field name="rs-image-hover" type="media" label="IMAGE-HOVER-RSS" description=""/>
+
+          </fieldset>
+          <fieldset name="linkedin">
+              <field name="li-name" type="text" label="NAME_LINKEDIN" />
+              <field name="li-url" type="text" label="URL_LINKEDIN" />
+              <field name="li-image" type="media" label="IMAGE-LINKEDIN" description=""/>
+              <field name="li-image-hover" type="media" label="IMAGE-HOVER-LINKEDIN" description=""/>
+
+          </fieldset>
+          <fieldset name="flickr">
+              <field name="fl-name" type="text" label="NAME_FLICKR" />
+              <field name="fl-url" type="text" label="URL_FLICKR" />
+              <field name="fl-image" type="media" label="IMAGE-FLICKR" description=""/>
+              <field name="fl-image-hover" type="media" label="IMAGE-HOVER-FLICKR" description=""/>
+
+          </fieldset>
+          <fieldset name="pinterest">
+              <field name="pin-name" type="text" label="NAME_PINTEREST" />
+              <field name="pin-url" type="text" label="URL_PINTEREST" />
+              <field name="pin-image" type="media" label="IMAGE-PINTEREST" description=""/>
+              <field name="pin-image-hover" type="media" label="IMAGE-HOVER-PINTEREST" description=""/>
+
+          </fieldset>
+          <fieldset name="advand">
+              <field type="text" name="moduleclass_sfx"
+                     label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                     description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC">
+
+              </field>
+              <field name="width" type="text" label="Width" description="example 20px"/>
+              <field name="height" type="text" label="Height" description="example 20px" />
+              <field name="space" type="text" label="Space" description="example 5px" />
+
+
+          </fieldset>
+
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+    <name>TZ Template Package</name>
+    <packagename>TZ</packagename>
+    <version>1.0</version>
+    <url>https://www.templaza.com/</url>
+    <creationDate>25 May 2013</creationDate>
+    <copyright>(C) 2012 - 2013. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>info@templaza.com</authorEmail>
+    <authorUrl>https://www.templaza.com/</authorUrl>
+    <author>Templaza</author>
+    <packager>TZ Template</packager>
+    <packagerurl>https://www.templaza.com/</packagerurl>
+    <description>	
+	<![CDATA[
+	<div align="center">
+		<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+				<a href="https://www.templaza.com/"><img src="" alt="some_text" width="300" height="99"></a>
+				<h4><a href="https://www.templaza.com/" title="">Home</a> | <a href="http://demo.templaza.com/" title="">Demo</a> | <a href="http://templaza.com/docs/blog" title="">Document</a> </h4>
+		<p> </p>
+		<p>Copyright 20012 - 2013 <a href='http://templaza.com/' title='Visit Templaza.com'>Templaza.com</a>.</p>
+		</div>
+     <style>table.adminform{width: 100%;}</style>
+	 </div>
+		]]>
+	</description>
+    <files folder="source">
+        <file type="plugin" id="plg_plazart" group="system">plg_plazart</file>
+        <file type="template" id="tpl_tz_blog" client="site">tpl_tz_blog</file>
+    </files>
+    
+</extension>
