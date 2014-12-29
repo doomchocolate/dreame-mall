@@ -15,6 +15,18 @@ defined('_JEXEC') or die;
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="HandheldFriendly" content="true" />
 <meta name="apple-mobile-web-app-capable" content="YES" />
+
+// 百度统计
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?5393cb50910367149d6c7cef72be1f8f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 <?php
 
 $pageview = JRequest::getVar('view');
@@ -473,14 +485,14 @@ $this->addScript(PLAZART_TEMPLATE_REL.'/js/jquery.backgroundSize.js');
 
 
 
-<div id="fb-root"></div>
-<script type="text/javascript">(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/<?php echo $fb_lang; ?>/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+#<div id="fb-root"></div>
+#<script type="text/javascript">(function(d, s, id) {
+#        var js, fjs = d.getElementsByTagName(s)[0];
+#        if (d.getElementById(id)) return;
+#        js = d.createElement(s); js.id = id;
+#        js.src = "//connect.facebook.net/<?php echo $fb_lang; ?>/all.js#xfbml=1";
+#        fjs.parentNode.insertBefore(js, fjs);
+#    }(document, 'script', 'facebook-jssdk'));</script>
 
 
 <script type="text/javascript">

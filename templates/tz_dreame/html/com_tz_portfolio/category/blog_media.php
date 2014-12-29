@@ -59,7 +59,7 @@ if($params -> get('tz_use_lightbox',1) == 1){
                 }
             ?>
                 <div class="tz_portfolio_image" style="position: relative;">
-                    <a<?php echo $class;?> href="<?php echo $link?>">
+                    <a<?php echo $class;?> target="_blank" href="<?php echo $link?>">
                         <img src="<?php echo $src;?>" alt="<?php if(isset($media[0] -> imagetitle)) echo $media[0] -> imagetitle;?>"
                                  title="<?php if(isset($media[0] -> imagetitle)) echo $media[0] -> imagetitle;?>"/>
                         <?php if($params -> get('tz_use_image_hover',1) == 1):?>

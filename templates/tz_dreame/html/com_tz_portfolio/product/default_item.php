@@ -257,7 +257,7 @@ JFactory::getLanguage()->load('com_tz_portfolio');
                     <?php if($params -> get('show_title',1)): ?>
                         <h3 class="TzPortfolioTitle name">
                             <?php if($params->get('link_titles',1)) : ?>
-                                <a<?php if($params -> get('tz_use_lightbox') == 1){echo ' class="fancybox fancybox.iframe"';}?> href="<?php echo $row ->link; ?>">
+                                <a<?php if($params -> get('tz_use_lightbox') == 1){echo ' class="fancybox fancybox.iframe"';}?> target="_blank" href="<?php echo $row ->link; ?>">
                                     <?php echo $this->escape($row -> title); ?>
                                 </a>
                             <?php else : ?>

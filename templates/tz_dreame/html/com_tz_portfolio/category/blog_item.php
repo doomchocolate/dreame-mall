@@ -248,7 +248,7 @@ else{
     <?php if ($params->get('show_title',1)) : ?>
         <h3 class="TzBlogTitle">
             <?php if ($params->get('link_titles',1) && $params->get('access-view')) : ?>
-                <a<?php if($params -> get('tz_use_lightbox') == 1) echo ' class="fancybox fancybox.iframe"';?> href="<?php echo $blogLink; ?>">
+                <a<?php if($params -> get('tz_use_lightbox') == 1) echo ' class="fancybox fancybox.iframe"';?> target="_blank" href="<?php echo $blogLink; ?>">
                     <?php echo $this->escape($this->item->title); ?></a>
             <?php else : ?>
                 <?php echo $this->escape($this->item->title); ?>
@@ -314,7 +314,7 @@ else{
         endif;
         ?>
         <?php if($params -> get('show_readmore',1) == 1):?>
-        <a class="btn btn-medium bg-orange <?php if($params -> get('tz_use_lightbox') == 1) echo ' fancybox fancybox.iframe';?>" href="<?php echo $link; ?>">
+        <a class="btn btn-medium bg-orange <?php if($params -> get('tz_use_lightbox') == 1) echo ' fancybox fancybox.iframe';?>" target="_blank" href="<?php echo $link; ?>">
             <?php if (!$params->get('access-view')) :
                 echo JText::_('COM_CONTENT_REGISTER_TO_READ_MORE');
             elseif ($readmore = $this->item->alternative_readmore) :

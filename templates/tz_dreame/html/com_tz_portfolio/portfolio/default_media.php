@@ -85,7 +85,7 @@ if($params -> get('tz_use_lightbox',1) == 1){
                 <?php if($media[0] -> type == 'image'):?>
                     <?php if($src): $src    = JURI::root().$src;?>
                         <div class="tz_portfolio_image">
-                            <a<?php echo $class;?> href="<?php echo $link?>">
+                            <a<?php echo $class;?> target="_blank" href="<?php echo $link?>">
                                 <img src="<?php echo $src;?>" alt="<?php if(isset($media[0] -> imagetitle)) echo $media[0] -> imagetitle;?>"
                                          title="<?php if(isset($media[0] -> imagetitle)) echo $media[0] -> imagetitle;?>"/>
                                 <?php if($params -> get('tz_use_image_hover',1) == 1 AND $params -> get('show_image',1) == 1):?>
@@ -151,7 +151,7 @@ if($params -> get('tz_use_lightbox',1) == 1){
                 <?php echo $this -> loadTemplate('audio');?>
             <?php endif;?>
 
-            <a <?php echo $class;?> class="portfolio-hover" href="<?php echo $link?>"></a>
+            <a <?php echo $class;?> target="_blank" class="portfolio-hover" href="<?php echo $link?>"></a>
         </div>
         <?php endif;?>
     <?php endif;?>
