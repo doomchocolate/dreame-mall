@@ -12,10 +12,10 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'localhost';
-	public $user = 'debian-sys-maint';
+	public $host = 'iam007.cskkndpfwwgp.ap-northeast-1.rds.amazonaws.com';
+	public $user = 'jiangerji';
 	public $password = 'eMBWzH5SIFJw5I4c';
-	public $db = 'future-store';
+	public $db = 'baidu';
 	public $dbprefix = 'erji_';
 	public $live_site = '';
 	public $secret = 'Q9OdfIBh2YzFXrtZ';
